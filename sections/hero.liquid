@@ -12,7 +12,7 @@
       {%- if section.settings.image != blank -%}
         {{ section.settings.image | image_url: width: 1600 | image_tag: loading: 'eager', fetchpriority: 'high', sizes: '(min-width: 990px) 50vw, 100vw', widths: '600,900,1200,1600' }}
       {%- else -%}
-        {% render 'bottle-placeholder', uid: section.id %}
+        {% render 'bottle-placeholder', file: 'hero-model.jpg' %}
       {%- endif -%}
     </div>
   </div>
@@ -23,9 +23,9 @@
   "name": "Hero",
   "settings": [
     { "type": "image_picker", "id": "image", "label": "Image" },
-    { "type": "text", "id": "eyebrow", "label": "Small heading", "default": "Cold-pressed botanical face oil" },
-    { "type": "text", "id": "heading", "label": "Heading", "default": "Glow that starts with three drops" },
-    { "type": "textarea", "id": "text", "label": "Text", "default": "A featherlight blend of botanical oils for soft, supple, radiant-looking skin." },
+    { "type": "text", "id": "eyebrow", "label": "Small heading", "default": "Black truffle collagen oil" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "One drop. All glow." },
+    { "type": "textarea", "id": "text", "label": "Text", "default": "Black truffle essence, collagen and botanical extracts in a lightweight, fast-absorbing oil for a smoother, radiant glow." },
     { "type": "text", "id": "button_label", "label": "Button label", "default": "Shop the oil" },
     { "type": "url", "id": "button_link", "label": "Button link" }
   ],

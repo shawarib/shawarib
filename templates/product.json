@@ -13,20 +13,20 @@
         "title": {
           "type": "title",
           "settings": {
-            "eyebrow": "Cold-pressed botanical face oil"
+            "eyebrow": "Glow · Firm · Hydrate"
           }
         },
         "price": {
           "type": "price",
           "settings": {
-            "note": "Taxes included"
+            "note": ""
           }
         },
         "benefits": {
           "type": "benefits",
           "settings": {
             "icon": "check",
-            "items": "Deep, lasting hydration without the grease\nA soft, healthy-looking glow\nAbsorbs in seconds, layers under makeup\nGentle on every skin type"
+            "items": "Deeply nourishes and helps relieve dryness\nVisibly improves skin texture\nSoftens the appearance of fine lines\nSupports firmer-looking skin\nLightweight and fast-absorbing"
           }
         },
         "variants": {
@@ -35,25 +35,33 @@
         },
         "bundles": {
           "type": "bundles",
-          "settings": {}
+          "settings": {
+            "subtitle_1": "30 ml",
+            "subtitle_2": "2 × 30 ml",
+            "subtitle_3": "3 × 30 ml"
+          }
         },
         "buy": {
           "type": "buy_buttons",
           "settings": {
             "label": "Add to cart",
-            "show_dynamic_checkout": false
+            "show_dynamic_checkout": false,
+            "subtext": "Secure checkout"
           }
         },
         "trust": {
           "type": "trust_icons",
-          "settings": {}
+          "settings": {
+            "icon_1": "drop",
+            "text_1": "Deep hydration",
+            "icon_2": "sparkle",
+            "text_2": "Visible glow",
+            "icon_3": "leaf",
+            "text_3": "Paraben & sulfate free"
+          }
         },
         "payments": {
           "type": "payment_icons",
-          "settings": {}
-        },
-        "guarantee": {
-          "type": "guarantee",
           "settings": {}
         },
         "acc1": {
@@ -70,7 +78,7 @@
           "settings": {
             "heading": "How to use",
             "icon": "drop",
-            "content": "<p>Warm 3 drops between your palms and press gently into clean, slightly damp skin, morning and night. Use it alone or as the last step over your moisturiser.</p>"
+            "content": "<p>Shake well before use. After cleansing, dispense an appropriate amount into the palm of your hand. Crush the Black Truffle granules and blend with the essence oil. Apply evenly to face and neck, then gently pat until fully absorbed.</p>"
           }
         },
         "acc3": {
@@ -78,7 +86,7 @@
           "settings": {
             "heading": "Ingredients",
             "icon": "flask",
-            "content": "<p>Add your full ingredient (INCI) list here.</p>"
+            "content": "<p><strong>Essence Oil:</strong> Dimethicone, Cetyl Ethylhexanoate, Dimethiconol, Caprylic/Capric Triglyceride, Olea Europaea (Olive) Fruit Oil, Simmondsia Chinensis (Jojoba) Seed Oil, Squalane, Dipalmitoyl Hydroxyproline, Rosa Rugosa Flower Oil, Limnanthes Alba (Meadowfoam) Seed Oil, Hexyldecanol.</p><p><strong>Trace ingredients:</strong> Jasminum Sambac (Jasmine) Flower Oil, Stearic Acid, N-Palmitoyl Hydroxyproline, Bisabolol, Laminaria Ochroleuca Extract, Brassica Campestris Sterols.</p><p><strong>Black Truffle Granules:</strong> Water, Butylene Glycol, Tremella Fuciformis (Snow Mushroom) Polysaccharide, 1,2-Hexanediol, 4-Hydroxyphenyl Ethanol, Chondrus Crispus Extract, Acrylates Crosspolymer, Polyacrylamide, C13-14 Isoparaffin.</p><p><strong>Trace ingredients:</strong> Collagen, Propylene Glycol, Tuber Melanosporum (Black Truffle) Extract, Laureth-7, Silica, Malachite Extract, 1,2-Pentanediol, Phellodendron Amurense Bark Extract, CI 16035.</p>"
           }
         },
         "acc4": {
@@ -86,7 +94,7 @@
           "settings": {
             "heading": "Shipping & returns",
             "icon": "truck",
-            "content": "<p>Orders ship within 1–2 business days. Not in love? Return it within 30 days for a refund.</p>"
+            "content": "<p>Add your shipping times and return policy here.</p>"
           }
         }
       },
@@ -100,7 +108,6 @@
         "buy",
         "trust",
         "payments",
-        "guarantee",
         "acc1",
         "acc2",
         "acc3",
@@ -114,43 +121,57 @@
     "marquee": {
       "type": "marquee",
       "blocks": {
+        "m0": {
+          "type": "text",
+          "settings": {
+            "text": "Glow"
+          }
+        },
         "m1": {
           "type": "text",
           "settings": {
-            "text": "Cold-pressed"
+            "text": "Firm"
           }
         },
         "m2": {
           "type": "text",
           "settings": {
-            "text": "Vegan"
+            "text": "Hydrate"
           }
         },
         "m3": {
           "type": "text",
           "settings": {
-            "text": "Cruelty-free"
+            "text": "Black truffle"
           }
         },
         "m4": {
           "type": "text",
           "settings": {
-            "text": "No synthetic fragrance"
+            "text": "Collagen"
           }
         },
         "m5": {
           "type": "text",
           "settings": {
-            "text": "Recyclable glass"
+            "text": "Paraben free"
+          }
+        },
+        "m6": {
+          "type": "text",
+          "settings": {
+            "text": "Sulfate free"
           }
         }
       },
       "block_order": [
+        "m0",
         "m1",
         "m2",
         "m3",
         "m4",
-        "m5"
+        "m5",
+        "m6"
       ],
       "settings": {
         "style": "dark",
@@ -163,33 +184,33 @@
         "i1": {
           "type": "item",
           "settings": {
-            "icon": "leaf",
-            "title": "Plant-derived",
-            "text": "Botanical oils and nothing your skin doesn't need."
+            "icon": "drop",
+            "title": "Deep hydration",
+            "text": "Deeply nourishes and helps relieve dryness."
           }
         },
         "i2": {
           "type": "item",
           "settings": {
-            "icon": "drop",
-            "title": "Featherlight",
-            "text": "Sinks in within seconds, no greasy film."
+            "icon": "sparkle",
+            "title": "Visible glow",
+            "text": "Reveals a smoother, radiant glow."
           }
         },
         "i3": {
           "type": "item",
           "settings": {
-            "icon": "sun",
-            "title": "Morning & night",
-            "text": "Wears beautifully under SPF and makeup."
+            "icon": "shield",
+            "title": "Firm-looking skin",
+            "text": "Supports firmer-looking skin."
           }
         },
         "i4": {
           "type": "item",
           "settings": {
-            "icon": "heart",
-            "title": "Every skin type",
-            "text": "Dry, oily, combination or sensitive."
+            "icon": "leaf",
+            "title": "Lightweight formula",
+            "text": "Fast-absorbing, never heavy."
           }
         }
       },
@@ -200,8 +221,8 @@
         "i4"
       ],
       "settings": {
-        "eyebrow": "Why you'll love it",
-        "heading": "One bottle, a whole lot of glow",
+        "eyebrow": "Nature. Science. Luxury.",
+        "heading": "One drop. All glow.",
         "background": "plain"
       }
     },
@@ -211,25 +232,25 @@
         "p1": {
           "type": "point",
           "settings": {
-            "icon": "drop",
-            "title": "Locks in moisture",
-            "text": "seals in hydration so skin stays soft all day"
+            "icon": "sparkle",
+            "title": "Smoother texture",
+            "text": "visibly improves skin texture"
           }
         },
         "p2": {
           "type": "point",
           "settings": {
-            "icon": "sparkle",
-            "title": "Brings back the glow",
-            "text": "for skin that looks rested and luminous"
+            "icon": "heart",
+            "title": "Softer-looking lines",
+            "text": "softens the appearance of fine lines"
           }
         },
         "p3": {
           "type": "point",
           "settings": {
-            "icon": "shield",
-            "title": "Comforts the skin barrier",
-            "text": "with oils rich in essential fatty acids"
+            "icon": "drop",
+            "title": "Lasting comfort",
+            "text": "deeply nourishes and helps relieve dryness"
           }
         }
       },
@@ -241,11 +262,12 @@
       "settings": {
         "image_position": "left",
         "background": "surface",
-        "eyebrow": "The difference",
-        "heading": "Skin that drinks it in",
-        "text": "<p>Most oils sit on top of your skin. Ours is blended to mirror your skin's own lipids, so it melts in and gets to work.</p>",
+        "eyebrow": "Lightweight. Luminous.",
+        "heading": "A black truffle collagen oil for visible glow",
+        "text": "<p>Black truffle essence combined with collagen and botanical extracts delivers a lightweight, fast-absorbing formula for firmer-looking, radiant skin.</p>",
         "button_label": "Get your glow",
-        "button_link": "#MainContent"
+        "button_link": "#MainContent",
+        "fallback_image": "story-model.jpg"
       }
     },
     "stats": {
@@ -254,9 +276,9 @@
         "s1": {
           "type": "stat",
           "settings": {
-            "value": "100%",
+            "value": "3-in-1",
             "fill": 100,
-            "label": "Plant-derived oils"
+            "label": "Glow · Firm · Hydrate"
           }
         },
         "s2": {
@@ -264,15 +286,15 @@
           "settings": {
             "value": "0%",
             "fill": 0,
-            "label": "Synthetic fragrance, silicones or mineral oil"
+            "label": "Parabens"
           }
         },
         "s3": {
           "type": "stat",
           "settings": {
-            "value": "3",
-            "fill": 50,
-            "label": "Drops is all you need per use"
+            "value": "0%",
+            "fill": 0,
+            "label": "Sulfates"
           }
         }
       },
@@ -282,8 +304,8 @@
         "s3"
       ],
       "settings": {
-        "eyebrow": "By the numbers",
-        "heading": "Simple on purpose",
+        "eyebrow": "Plant essence multi-effect",
+        "heading": "Everything your glow needs",
         "background": "dark"
       }
     },
@@ -293,37 +315,37 @@
         "g1": {
           "type": "ingredient",
           "settings": {
-            "icon": "leaf",
-            "tag": "Renew",
-            "title": "Rosehip oil",
-            "text": "Naturally rich in essential fatty acids for a smoother, more even-looking complexion."
+            "icon": "sparkle",
+            "tag": "Signature",
+            "title": "Black truffle extract",
+            "text": "Tuber Melanosporum extract, held in granules you crush and blend at every use."
           }
         },
         "g2": {
           "type": "ingredient",
           "settings": {
-            "icon": "drop",
-            "tag": "Balance",
-            "title": "Jojoba oil",
-            "text": "Closely resembles skin's own sebum, so it hydrates without feeling heavy."
+            "icon": "shield",
+            "tag": "Firm",
+            "title": "Collagen",
+            "text": "Paired with hydroxyproline derivatives to support firmer-looking skin."
           }
         },
         "g3": {
           "type": "ingredient",
           "settings": {
-            "icon": "sparkle",
+            "icon": "drop",
             "tag": "Hydrate",
-            "title": "Squalane",
-            "text": "A weightless, plant-derived hydrator that leaves a silky, non-greasy finish."
+            "title": "Snow mushroom",
+            "text": "Tremella Fuciformis polysaccharide, a moisture-loving botanical extract."
           }
         },
         "g4": {
           "type": "ingredient",
           "settings": {
-            "icon": "shield",
-            "tag": "Protect",
-            "title": "Vitamin E",
-            "text": "An antioxidant that helps keep the blend, and your skin, feeling fresh."
+            "icon": "leaf",
+            "tag": "Nourish",
+            "title": "Squalane, jojoba & olive oil",
+            "text": "A silky oil blend that nourishes and helps relieve dryness."
           }
         }
       },
@@ -335,8 +357,8 @@
       ],
       "settings": {
         "eyebrow": "What's inside",
-        "heading": "Four oils. Nothing to hide.",
-        "text": "Edit these cards to match your real formula.",
+        "heading": "Inside every bottle",
+        "text": "See the full ingredient list in the details above.",
         "background": "plain"
       }
     },
@@ -346,33 +368,41 @@
         "t1": {
           "type": "step",
           "settings": {
-            "title": "Cleanse",
-            "text": "Start with clean, slightly damp skin so the oil spreads easily."
+            "title": "Shake",
+            "text": "Shake well before use, after cleansing."
           }
         },
         "t2": {
           "type": "step",
           "settings": {
-            "title": "Warm",
-            "text": "Press 3 drops between your palms to warm the oil."
+            "title": "Dispense",
+            "text": "Dispense an appropriate amount into your palm."
           }
         },
         "t3": {
           "type": "step",
           "settings": {
-            "title": "Press",
-            "text": "Gently press into face and neck, morning and night."
+            "title": "Crush & blend",
+            "text": "Crush the Black Truffle granules and blend with the essence oil."
+          }
+        },
+        "t4": {
+          "type": "step",
+          "settings": {
+            "title": "Apply & pat",
+            "text": "Apply evenly to face and neck, then gently pat until absorbed."
           }
         }
       },
       "block_order": [
         "t1",
         "t2",
-        "t3"
+        "t3",
+        "t4"
       ],
       "settings": {
         "eyebrow": "How to use",
-        "heading": "Your 30-second ritual",
+        "heading": "Your glow ritual",
         "background": "surface"
       }
     },
@@ -382,7 +412,7 @@
         "c1": {
           "type": "row",
           "settings": {
-            "feature": "Cold-pressed botanical oils",
+            "feature": "Black truffle extract",
             "us": true,
             "them": false
           }
@@ -390,7 +420,7 @@
         "c2": {
           "type": "row",
           "settings": {
-            "feature": "Absorbs fast, no greasy film",
+            "feature": "Collagen & snow mushroom",
             "us": true,
             "them": false
           }
@@ -398,7 +428,7 @@
         "c3": {
           "type": "row",
           "settings": {
-            "feature": "Free from synthetic fragrance",
+            "feature": "Truffle granules you blend fresh",
             "us": true,
             "them": false
           }
@@ -406,7 +436,7 @@
         "c4": {
           "type": "row",
           "settings": {
-            "feature": "No silicones or mineral oil",
+            "feature": "Lightweight, fast-absorbing",
             "us": true,
             "them": false
           }
@@ -429,8 +459,8 @@
       ],
       "settings": {
         "eyebrow": "Why switch",
-        "heading": "Not all face oils are equal",
-        "them_label": "Typical oils",
+        "heading": "More than an ordinary face oil",
+        "them_label": "Ordinary oils",
         "background": "plain"
       }
     },
@@ -479,7 +509,10 @@
     "guarantee": {
       "type": "guarantee",
       "settings": {
-        "background": "dark"
+        "background": "dark",
+        "heading": "Reveal a smoother, radiant glow",
+        "text": "<p>Glow, firm and hydrate with one lightweight oil.</p>",
+        "button_label": "Shop now"
       }
     },
     "faq": {
@@ -488,36 +521,36 @@
         "q1": {
           "type": "question",
           "settings": {
-            "question": "Will a face oil make my skin greasy?",
-            "answer": "<p>No. The blend is lightweight and absorbs in seconds. Start with 2–3 drops on damp skin; a little goes a long way.</p>"
+            "question": "How do I use it?",
+            "answer": "<p>Shake well. After cleansing, dispense into your palm, crush the Black Truffle granules, blend with the oil, then apply to face and neck and pat until absorbed.</p>"
           }
         },
         "q2": {
           "type": "question",
           "settings": {
-            "question": "Can I use it on oily or acne-prone skin?",
-            "answer": "<p>Many people with oily skin enjoy lightweight oils like jojoba and squalane. As with any new product, patch test first.</p>"
+            "question": "What are the dark specks in the oil?",
+            "answer": "<p>They are the Black Truffle granules. Crush them in your palm and blend them into the essence oil before applying.</p>"
           }
         },
         "q3": {
           "type": "question",
           "settings": {
-            "question": "Where does it fit in my routine?",
-            "answer": "<p>Use it as your last skincare step at night, and before SPF in the morning. You can also mix a drop into your moisturiser.</p>"
+            "question": "Will it feel greasy?",
+            "answer": "<p>The formula is lightweight and fast-absorbing.</p>"
           }
         },
         "q4": {
           "type": "question",
           "settings": {
-            "question": "How long does one bottle last?",
-            "answer": "<p>With daily use, one bottle lasts around 8 weeks.</p>"
+            "question": "Is it paraben and sulfate free?",
+            "answer": "<p>Yes. The oil is paraben free and sulfate free. The full ingredient list is on this page.</p>"
           }
         },
         "q5": {
           "type": "question",
           "settings": {
-            "question": "What if it isn't right for me?",
-            "answer": "<p>You're covered by our 30-day guarantee. Get in touch and we'll make it right.</p>"
+            "question": "How big is the bottle?",
+            "answer": "<p>Each bottle contains 30 ml (1.01 fl. oz.).</p>"
           }
         }
       },

@@ -1,7 +1,7 @@
 [
   {
     "name": "theme_info",
-    "theme_name": "Lumière Oil",
+    "theme_name": "Es La Vira",
     "theme_version": "1.0.0",
     "theme_author": "shawarib",
     "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes",
@@ -10,14 +10,14 @@
   {
     "name": "Colors",
     "settings": [
-      { "type": "color", "id": "color_background", "label": "Background", "default": "#FBF6EE" },
-      { "type": "color", "id": "color_surface", "label": "Alternate background", "default": "#F2E8D8" },
-      { "type": "color", "id": "color_text", "label": "Text", "default": "#2A2A22" },
-      { "type": "color", "id": "color_accent", "label": "Accent (gold)", "default": "#B4762B" },
-      { "type": "color", "id": "color_button", "label": "Button", "default": "#2F4032" },
-      { "type": "color", "id": "color_button_text", "label": "Button text", "default": "#FFF9EE" },
-      { "type": "color", "id": "color_dark", "label": "Dark sections background", "default": "#26332A" },
-      { "type": "color", "id": "color_dark_text", "label": "Dark sections text", "default": "#F8F1E3" }
+      { "type": "color", "id": "color_background", "label": "Background", "default": "#FAF6EF" },
+      { "type": "color", "id": "color_surface", "label": "Alternate background", "default": "#F1E8DA" },
+      { "type": "color", "id": "color_text", "label": "Text", "default": "#1B1714" },
+      { "type": "color", "id": "color_accent", "label": "Accent (gold)", "default": "#A97C2F" },
+      { "type": "color", "id": "color_button", "label": "Button", "default": "#14110F" },
+      { "type": "color", "id": "color_button_text", "label": "Button text", "default": "#F2D9A2" },
+      { "type": "color", "id": "color_dark", "label": "Dark sections background", "default": "#121010" },
+      { "type": "color", "id": "color_dark_text", "label": "Dark sections text", "default": "#F5ECD9" }
     ]
   },
   {

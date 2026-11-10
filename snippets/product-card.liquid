@@ -4,7 +4,7 @@
     {%- if product.featured_image -%}
       {{ product.featured_image | image_url: width: 700 | image_tag: loading: 'lazy', alt: product.title }}
     {%- else -%}
-      {% render 'bottle-placeholder', uid: product.id %}
+      {% render 'bottle-placeholder' %}
     {%- endif -%}
     {%- if product.compare_at_price > product.price -%}
       <span class="badge badge--corner">{{ 'products.save' | t }} {{ product.compare_at_price | minus: product.price | times: 100 | divided_by: product.compare_at_price }}%</span>

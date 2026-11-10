@@ -1,6 +1,6 @@
-# Lumière Oil — Shopify theme
+# Es La Vira — Shopify theme
 
-A single-product landing-page theme for a face oil: gallery + buy box with bundle picker, sticky add-to-cart, scrolling text, icon highlights, image-with-text, stat rings, ingredient cards, how-to steps, comparison table, reviews, guarantee banner and FAQ. Every section is editable in the Shopify theme editor.
+A single-product landing-page theme for ES LA VIRA Black Truffle Collagen Oil: gallery + buy box with bundle picker, sticky add-to-cart, scrolling text, icon highlights, image-with-text, stat rings, ingredient cards, how-to steps, comparison table, reviews, guarantee banner and FAQ. Every section is editable in the Shopify theme editor.
 
 ## Install
 

@@ -10,7 +10,7 @@
   <section class="section">
     <div class="container product product--empty">
       <div class="product__gallery">
-        <div class="product__slide">{% render 'bottle-placeholder', uid: section.id %}</div>
+        <div class="product__slide">{% render 'bottle-placeholder' %}</div>
       </div>
       <div class="product__info">
         <h1 class="product__title">Your face oil</h1>
@@ -35,7 +35,7 @@
             </div>
           {%- endfor -%}
         {%- else -%}
-          <div class="product__slide">{% render 'bottle-placeholder', uid: section.id %}</div>
+          <div class="product__slide">{% render 'bottle-placeholder' %}</div>
         {%- endif -%}
       </div>
       {%- if product.media.size > 1 -%}
@@ -255,7 +255,7 @@
     {
       "type": "title", "name": "Title", "limit": 1,
       "settings": [
-        { "type": "text", "id": "eyebrow", "label": "Small text above title", "default": "Cold-pressed botanical face oil" }
+        { "type": "text", "id": "eyebrow", "label": "Small text above title", "default": "Glow · Firm · Hydrate" }
       ]
     },
     {
@@ -267,13 +267,13 @@
     {
       "type": "text", "name": "Text",
       "settings": [
-        { "type": "richtext", "id": "text", "label": "Text", "default": "<p>A featherlight blend of botanical oils that melts in, never sits on top, leaving skin soft, supple and visibly radiant.</p>" }
+        { "type": "richtext", "id": "text", "label": "Text", "default": "<p>Black truffle essence combined with collagen and botanical extracts in a lightweight, fast-absorbing formula.</p>" }
       ]
     },
     {
       "type": "benefits", "name": "Benefit list",
       "settings": [
-        { "type": "textarea", "id": "items", "label": "Benefits (one per line)", "default": "Deep, lasting hydration without the grease\nA soft, healthy-looking glow\nAbsorbs in seconds, layers under makeup\nGentle on every skin type" },
+        { "type": "textarea", "id": "items", "label": "Benefits (one per line)", "default": "Deeply nourishes and helps relieve dryness\nVisibly improves skin texture\nSoftens the appearance of fine lines\nSupports firmer-looking skin" },
         { "type": "select", "id": "icon", "label": "Icon", "default": "check", "options": [
           { "value": "check", "label": "Check" }, { "value": "leaf", "label": "Leaf" }, { "value": "drop", "label": "Drop" }, { "value": "sparkle", "label": "Sparkle" }, { "value": "heart", "label": "Heart" }
         ] }
@@ -289,19 +289,19 @@
         { "type": "header", "content": "Option 1" },
         { "type": "range", "id": "qty_1", "min": 1, "max": 6, "step": 1, "label": "Quantity", "default": 1 },
         { "type": "text", "id": "title_1", "label": "Title", "default": "1 bottle" },
-        { "type": "text", "id": "subtitle_1", "label": "Subtitle", "default": "About 8 weeks of daily use" },
+        { "type": "text", "id": "subtitle_1", "label": "Subtitle", "default": "30 ml" },
         { "type": "range", "id": "discount_1", "min": 0, "max": 50, "step": 1, "unit": "%", "label": "Discount", "default": 0 },
         { "type": "text", "id": "badge_1", "label": "Badge" },
         { "type": "header", "content": "Option 2" },
         { "type": "range", "id": "qty_2", "min": 1, "max": 6, "step": 1, "label": "Quantity", "default": 2 },
         { "type": "text", "id": "title_2", "label": "Title", "default": "2 bottles" },
-        { "type": "text", "id": "subtitle_2", "label": "Subtitle", "default": "Morning & night ritual + free shipping" },
+        { "type": "text", "id": "subtitle_2", "label": "Subtitle", "default": "2 × 30 ml" },
         { "type": "range", "id": "discount_2", "min": 0, "max": 50, "step": 1, "unit": "%", "label": "Discount", "default": 10 },
         { "type": "text", "id": "badge_2", "label": "Badge", "default": "Most popular" },
         { "type": "header", "content": "Option 3" },
         { "type": "range", "id": "qty_3", "min": 1, "max": 6, "step": 1, "label": "Quantity", "default": 3 },
         { "type": "text", "id": "title_3", "label": "Title", "default": "3 bottles" },
-        { "type": "text", "id": "subtitle_3", "label": "Subtitle", "default": "Best value + free shipping" },
+        { "type": "text", "id": "subtitle_3", "label": "Subtitle", "default": "3 × 30 ml" },
         { "type": "range", "id": "discount_3", "min": 0, "max": 50, "step": 1, "unit": "%", "label": "Discount", "default": 20 },
         { "type": "text", "id": "badge_3", "label": "Badge", "default": "Best value" },
         { "type": "text", "id": "note", "label": "Note under options", "default": "Discount applied automatically at checkout." }
@@ -312,26 +312,26 @@
       "settings": [
         { "type": "text", "id": "label", "label": "Button label", "default": "Add to cart" },
         { "type": "checkbox", "id": "show_dynamic_checkout", "label": "Show dynamic checkout button", "default": false },
-        { "type": "text", "id": "subtext", "label": "Text under button", "default": "Secure checkout · Ships in 1–2 business days" }
+        { "type": "text", "id": "subtext", "label": "Text under button", "default": "Secure checkout" }
       ]
     },
     {
       "type": "trust_icons", "name": "Trust icons", "limit": 1,
       "settings": [
         { "type": "text", "id": "icon_1", "label": "Icon 1", "default": "truck", "info": "leaf, drop, sparkle, shield, truck, heart, sun, moon, flask, bunny, recycle, lock, return, clock, gift" },
-        { "type": "text", "id": "text_1", "label": "Text 1", "default": "Free shipping on 2+" },
-        { "type": "text", "id": "icon_2", "label": "Icon 2", "default": "return" },
-        { "type": "text", "id": "text_2", "label": "Text 2", "default": "30-day returns" },
-        { "type": "text", "id": "icon_3", "label": "Icon 3", "default": "bunny" },
-        { "type": "text", "id": "text_3", "label": "Text 3", "default": "Vegan & cruelty-free" }
+        { "type": "text", "id": "text_1", "label": "Text 1", "default": "Fast shipping" },
+        { "type": "text", "id": "icon_2", "label": "Icon 2", "default": "sparkle" },
+        { "type": "text", "id": "text_2", "label": "Text 2", "default": "Visible glow" },
+        { "type": "text", "id": "icon_3", "label": "Icon 3", "default": "leaf" },
+        { "type": "text", "id": "text_3", "label": "Text 3", "default": "Paraben & sulfate free" }
       ]
     },
     { "type": "payment_icons", "name": "Payment icons", "limit": 1 },
     {
       "type": "guarantee", "name": "Guarantee box", "limit": 1,
       "settings": [
-        { "type": "text", "id": "title", "label": "Title", "default": "30-day glow guarantee" },
-        { "type": "text", "id": "text", "label": "Text", "default": "Try it for 30 days. If your skin doesn't love it, we'll refund you." }
+        { "type": "text", "id": "title", "label": "Title", "default": "Our promise" },
+        { "type": "text", "id": "text", "label": "Text", "default": "Describe your guarantee or return policy here." }
       ]
     },
     {

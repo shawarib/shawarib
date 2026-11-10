@@ -8,7 +8,7 @@
             {%- if collection.featured_image -%}
               {{ collection.featured_image | image_url: width: 700 | image_tag: loading: 'lazy', alt: collection.title }}
             {%- else -%}
-              {% render 'bottle-placeholder', uid: collection.id %}
+              {% render 'bottle-placeholder' %}
             {%- endif -%}
           </div>
           <h3 class="product-card__title">{{ collection.title }}</h3>

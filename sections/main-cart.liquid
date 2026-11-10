@@ -12,7 +12,7 @@
               {%- if item.image -%}
                 {{ item.image | image_url: width: 240 | image_tag: loading: 'lazy', alt: item.title }}
               {%- else -%}
-                {% render 'bottle-placeholder', uid: item.key %}
+                {% render 'bottle-placeholder' %}
               {%- endif -%}
             </a>
             <div class="cart__details">
