@@ -277,24 +277,21 @@
           "type": "stat",
           "settings": {
             "value": "3-in-1",
-            "fill": 100,
-            "label": "Glow · Firm · Hydrate"
+            "label": "Glow, firm and hydrate in one lightweight oil."
           }
         },
         "s2": {
           "type": "stat",
           "settings": {
             "value": "0%",
-            "fill": 0,
-            "label": "Parabens"
+            "label": "Parabens. The formula is paraben free."
           }
         },
         "s3": {
           "type": "stat",
           "settings": {
             "value": "0%",
-            "fill": 0,
-            "label": "Sulfates"
+            "label": "Sulfates. The formula is sulfate free."
           }
         }
       },
