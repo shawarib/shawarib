@@ -1,0 +1,61 @@
+<footer class="site-footer">
+  <div class="container site-footer__grid">
+    <div class="site-footer__brand">
+      <p class="site-footer__wordmark">{{ shop.name }}</p>
+      {%- if section.settings.text != blank -%}
+        <div class="rte">{{ section.settings.text }}</div>
+      {%- endif -%}
+      <div class="site-footer__social">
+        {%- if settings.social_instagram != blank -%}<a href="{{ settings.social_instagram }}" rel="noopener" target="_blank">Instagram</a>{%- endif -%}
+        {%- if settings.social_tiktok != blank -%}<a href="{{ settings.social_tiktok }}" rel="noopener" target="_blank">TikTok</a>{%- endif -%}
+        {%- if settings.social_facebook != blank -%}<a href="{{ settings.social_facebook }}" rel="noopener" target="_blank">Facebook</a>{%- endif -%}
+      </div>
+    </div>
+
+    <nav class="site-footer__menu" aria-label="Footer">
+      <p class="site-footer__heading">{{ section.settings.menu_heading }}</p>
+      {%- for link in section.settings.menu.links -%}
+        <a href="{{ link.url }}">{{ link.title }}</a>
+      {%- endfor -%}
+    </nav>
+
+    {%- if section.settings.show_newsletter -%}
+      <div class="site-footer__newsletter">
+        <p class="site-footer__heading">{{ section.settings.newsletter_heading }}</p>
+        <p>{{ section.settings.newsletter_text }}</p>
+        {%- form 'customer', class: 'newsletter-form' -%}
+          <input type="hidden" name="contact[tags]" value="newsletter">
+          {%- if form.posted_successfully? -%}
+            <p class="newsletter-form__success">{{ 'newsletter.success' | t }}</p>
+          {%- else -%}
+            <input type="email" name="contact[email]" required autocomplete="email" placeholder="{{ 'newsletter.email' | t }}" aria-label="{{ 'newsletter.email' | t }}">
+            <button class="button button--accent" type="submit">{{ 'newsletter.subscribe' | t }}</button>
+          {%- endif -%}
+        {%- endform -%}
+      </div>
+    {%- endif -%}
+  </div>
+
+  <div class="container site-footer__bottom">
+    <p>&copy; {{ 'now' | date: '%Y' }} {{ shop.name }}</p>
+    <div class="payment-icons">
+      {%- for type in shop.enabled_payment_types -%}
+        {{ type | payment_type_svg_tag: class: 'payment-icon' }}
+      {%- endfor -%}
+    </div>
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "Footer",
+  "settings": [
+    { "type": "richtext", "id": "text", "label": "Brand text", "default": "<p>Small-batch botanical face oil, pressed and bottled with care.</p>" },
+    { "type": "text", "id": "menu_heading", "label": "Menu heading", "default": "Explore" },
+    { "type": "link_list", "id": "menu", "label": "Menu", "default": "footer" },
+    { "type": "checkbox", "id": "show_newsletter", "label": "Show newsletter signup", "default": true },
+    { "type": "text", "id": "newsletter_heading", "label": "Newsletter heading", "default": "Join the glow list" },
+    { "type": "text", "id": "newsletter_text", "label": "Newsletter text", "default": "Skin rituals, early access and members-only offers." }
+  ]
+}
+{% endschema %}

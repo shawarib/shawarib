@@ -1,0 +1,47 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Lumière Oil",
+    "theme_version": "1.0.0",
+    "theme_author": "shawarib",
+    "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes",
+    "theme_support_url": "https://help.shopify.com"
+  },
+  {
+    "name": "Colors",
+    "settings": [
+      { "type": "color", "id": "color_background", "label": "Background", "default": "#FBF6EE" },
+      { "type": "color", "id": "color_surface", "label": "Alternate background", "default": "#F2E8D8" },
+      { "type": "color", "id": "color_text", "label": "Text", "default": "#2A2A22" },
+      { "type": "color", "id": "color_accent", "label": "Accent (gold)", "default": "#B4762B" },
+      { "type": "color", "id": "color_button", "label": "Button", "default": "#2F4032" },
+      { "type": "color", "id": "color_button_text", "label": "Button text", "default": "#FFF9EE" },
+      { "type": "color", "id": "color_dark", "label": "Dark sections background", "default": "#26332A" },
+      { "type": "color", "id": "color_dark_text", "label": "Dark sections text", "default": "#F8F1E3" }
+    ]
+  },
+  {
+    "name": "Layout",
+    "settings": [
+      { "type": "range", "id": "page_width", "min": 1000, "max": 1500, "step": 50, "unit": "px", "label": "Page width", "default": 1200 },
+      { "type": "range", "id": "radius", "min": 0, "max": 28, "step": 2, "unit": "px", "label": "Corner radius", "default": 16 },
+      { "type": "checkbox", "id": "pill_buttons", "label": "Pill-shaped buttons", "default": true }
+    ]
+  },
+  {
+    "name": "Brand",
+    "settings": [
+      { "type": "image_picker", "id": "logo", "label": "Logo" },
+      { "type": "range", "id": "logo_width", "min": 60, "max": 240, "step": 10, "unit": "px", "label": "Logo width", "default": 130 },
+      { "type": "image_picker", "id": "favicon", "label": "Favicon" }
+    ]
+  },
+  {
+    "name": "Social media",
+    "settings": [
+      { "type": "text", "id": "social_instagram", "label": "Instagram URL" },
+      { "type": "text", "id": "social_tiktok", "label": "TikTok URL" },
+      { "type": "text", "id": "social_facebook", "label": "Facebook URL" }
+    ]
+  }
+]

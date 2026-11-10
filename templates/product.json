@@ -1,0 +1,551 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "rating": {
+          "type": "rating",
+          "settings": {
+            "stars": 5,
+            "text": "Customer favourite"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "eyebrow": "Cold-pressed botanical face oil"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "note": "Taxes included"
+          }
+        },
+        "benefits": {
+          "type": "benefits",
+          "settings": {
+            "icon": "check",
+            "items": "Deep, lasting hydration without the grease\nA soft, healthy-looking glow\nAbsorbs in seconds, layers under makeup\nGentle on every skin type"
+          }
+        },
+        "variants": {
+          "type": "variant_picker",
+          "settings": {}
+        },
+        "bundles": {
+          "type": "bundles",
+          "settings": {}
+        },
+        "buy": {
+          "type": "buy_buttons",
+          "settings": {
+            "label": "Add to cart",
+            "show_dynamic_checkout": false
+          }
+        },
+        "trust": {
+          "type": "trust_icons",
+          "settings": {}
+        },
+        "payments": {
+          "type": "payment_icons",
+          "settings": {}
+        },
+        "guarantee": {
+          "type": "guarantee",
+          "settings": {}
+        },
+        "acc1": {
+          "type": "collapsible",
+          "settings": {
+            "heading": "Description",
+            "icon": "leaf",
+            "use_description": true,
+            "open": false
+          }
+        },
+        "acc2": {
+          "type": "collapsible",
+          "settings": {
+            "heading": "How to use",
+            "icon": "drop",
+            "content": "<p>Warm 3 drops between your palms and press gently into clean, slightly damp skin, morning and night. Use it alone or as the last step over your moisturiser.</p>"
+          }
+        },
+        "acc3": {
+          "type": "collapsible",
+          "settings": {
+            "heading": "Ingredients",
+            "icon": "flask",
+            "content": "<p>Add your full ingredient (INCI) list here.</p>"
+          }
+        },
+        "acc4": {
+          "type": "collapsible",
+          "settings": {
+            "heading": "Shipping & returns",
+            "icon": "truck",
+            "content": "<p>Orders ship within 1–2 business days. Not in love? Return it within 30 days for a refund.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "rating",
+        "title",
+        "price",
+        "benefits",
+        "variants",
+        "bundles",
+        "buy",
+        "trust",
+        "payments",
+        "guarantee",
+        "acc1",
+        "acc2",
+        "acc3",
+        "acc4"
+      ],
+      "settings": {
+        "sticky_bar": true,
+        "sticky_label": "Add to cart"
+      }
+    },
+    "marquee": {
+      "type": "marquee",
+      "blocks": {
+        "m1": {
+          "type": "text",
+          "settings": {
+            "text": "Cold-pressed"
+          }
+        },
+        "m2": {
+          "type": "text",
+          "settings": {
+            "text": "Vegan"
+          }
+        },
+        "m3": {
+          "type": "text",
+          "settings": {
+            "text": "Cruelty-free"
+          }
+        },
+        "m4": {
+          "type": "text",
+          "settings": {
+            "text": "No synthetic fragrance"
+          }
+        },
+        "m5": {
+          "type": "text",
+          "settings": {
+            "text": "Recyclable glass"
+          }
+        }
+      },
+      "block_order": [
+        "m1",
+        "m2",
+        "m3",
+        "m4",
+        "m5"
+      ],
+      "settings": {
+        "style": "dark",
+        "speed": 28
+      }
+    },
+    "highlights": {
+      "type": "icon-row",
+      "blocks": {
+        "i1": {
+          "type": "item",
+          "settings": {
+            "icon": "leaf",
+            "title": "Plant-derived",
+            "text": "Botanical oils and nothing your skin doesn't need."
+          }
+        },
+        "i2": {
+          "type": "item",
+          "settings": {
+            "icon": "drop",
+            "title": "Featherlight",
+            "text": "Sinks in within seconds, no greasy film."
+          }
+        },
+        "i3": {
+          "type": "item",
+          "settings": {
+            "icon": "sun",
+            "title": "Morning & night",
+            "text": "Wears beautifully under SPF and makeup."
+          }
+        },
+        "i4": {
+          "type": "item",
+          "settings": {
+            "icon": "heart",
+            "title": "Every skin type",
+            "text": "Dry, oily, combination or sensitive."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4"
+      ],
+      "settings": {
+        "eyebrow": "Why you'll love it",
+        "heading": "One bottle, a whole lot of glow",
+        "background": "plain"
+      }
+    },
+    "story": {
+      "type": "image-with-text",
+      "blocks": {
+        "p1": {
+          "type": "point",
+          "settings": {
+            "icon": "drop",
+            "title": "Locks in moisture",
+            "text": "seals in hydration so skin stays soft all day"
+          }
+        },
+        "p2": {
+          "type": "point",
+          "settings": {
+            "icon": "sparkle",
+            "title": "Brings back the glow",
+            "text": "for skin that looks rested and luminous"
+          }
+        },
+        "p3": {
+          "type": "point",
+          "settings": {
+            "icon": "shield",
+            "title": "Comforts the skin barrier",
+            "text": "with oils rich in essential fatty acids"
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3"
+      ],
+      "settings": {
+        "image_position": "left",
+        "background": "surface",
+        "eyebrow": "The difference",
+        "heading": "Skin that drinks it in",
+        "text": "<p>Most oils sit on top of your skin. Ours is blended to mirror your skin's own lipids, so it melts in and gets to work.</p>",
+        "button_label": "Get your glow",
+        "button_link": "#MainContent"
+      }
+    },
+    "stats": {
+      "type": "stats",
+      "blocks": {
+        "s1": {
+          "type": "stat",
+          "settings": {
+            "value": "100%",
+            "fill": 100,
+            "label": "Plant-derived oils"
+          }
+        },
+        "s2": {
+          "type": "stat",
+          "settings": {
+            "value": "0%",
+            "fill": 0,
+            "label": "Synthetic fragrance, silicones or mineral oil"
+          }
+        },
+        "s3": {
+          "type": "stat",
+          "settings": {
+            "value": "3",
+            "fill": 50,
+            "label": "Drops is all you need per use"
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "settings": {
+        "eyebrow": "By the numbers",
+        "heading": "Simple on purpose",
+        "background": "dark"
+      }
+    },
+    "ingredients": {
+      "type": "ingredients",
+      "blocks": {
+        "g1": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "leaf",
+            "tag": "Renew",
+            "title": "Rosehip oil",
+            "text": "Naturally rich in essential fatty acids for a smoother, more even-looking complexion."
+          }
+        },
+        "g2": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "drop",
+            "tag": "Balance",
+            "title": "Jojoba oil",
+            "text": "Closely resembles skin's own sebum, so it hydrates without feeling heavy."
+          }
+        },
+        "g3": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "sparkle",
+            "tag": "Hydrate",
+            "title": "Squalane",
+            "text": "A weightless, plant-derived hydrator that leaves a silky, non-greasy finish."
+          }
+        },
+        "g4": {
+          "type": "ingredient",
+          "settings": {
+            "icon": "shield",
+            "tag": "Protect",
+            "title": "Vitamin E",
+            "text": "An antioxidant that helps keep the blend, and your skin, feeling fresh."
+          }
+        }
+      },
+      "block_order": [
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
+      "settings": {
+        "eyebrow": "What's inside",
+        "heading": "Four oils. Nothing to hide.",
+        "text": "Edit these cards to match your real formula.",
+        "background": "plain"
+      }
+    },
+    "steps": {
+      "type": "steps",
+      "blocks": {
+        "t1": {
+          "type": "step",
+          "settings": {
+            "title": "Cleanse",
+            "text": "Start with clean, slightly damp skin so the oil spreads easily."
+          }
+        },
+        "t2": {
+          "type": "step",
+          "settings": {
+            "title": "Warm",
+            "text": "Press 3 drops between your palms to warm the oil."
+          }
+        },
+        "t3": {
+          "type": "step",
+          "settings": {
+            "title": "Press",
+            "text": "Gently press into face and neck, morning and night."
+          }
+        }
+      },
+      "block_order": [
+        "t1",
+        "t2",
+        "t3"
+      ],
+      "settings": {
+        "eyebrow": "How to use",
+        "heading": "Your 30-second ritual",
+        "background": "surface"
+      }
+    },
+    "compare": {
+      "type": "comparison",
+      "blocks": {
+        "c1": {
+          "type": "row",
+          "settings": {
+            "feature": "Cold-pressed botanical oils",
+            "us": true,
+            "them": false
+          }
+        },
+        "c2": {
+          "type": "row",
+          "settings": {
+            "feature": "Absorbs fast, no greasy film",
+            "us": true,
+            "them": false
+          }
+        },
+        "c3": {
+          "type": "row",
+          "settings": {
+            "feature": "Free from synthetic fragrance",
+            "us": true,
+            "them": false
+          }
+        },
+        "c4": {
+          "type": "row",
+          "settings": {
+            "feature": "No silicones or mineral oil",
+            "us": true,
+            "them": false
+          }
+        },
+        "c5": {
+          "type": "row",
+          "settings": {
+            "feature": "Hydrates the skin",
+            "us": true,
+            "them": true
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5"
+      ],
+      "settings": {
+        "eyebrow": "Why switch",
+        "heading": "Not all face oils are equal",
+        "them_label": "Typical oils",
+        "background": "plain"
+      }
+    },
+    "reviews": {
+      "type": "testimonials",
+      "blocks": {
+        "r1": {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "title": "Review title",
+            "quote": "Paste a real customer review here.",
+            "author": "Customer name"
+          }
+        },
+        "r2": {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "title": "Review title",
+            "quote": "Paste a real customer review here.",
+            "author": "Customer name"
+          }
+        },
+        "r3": {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "title": "Review title",
+            "quote": "Paste a real customer review here.",
+            "author": "Customer name"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3"
+      ],
+      "settings": {
+        "eyebrow": "Reviews",
+        "heading": "Skin stories",
+        "background": "surface"
+      }
+    },
+    "guarantee": {
+      "type": "guarantee",
+      "settings": {
+        "background": "dark"
+      }
+    },
+    "faq": {
+      "type": "faq",
+      "blocks": {
+        "q1": {
+          "type": "question",
+          "settings": {
+            "question": "Will a face oil make my skin greasy?",
+            "answer": "<p>No. The blend is lightweight and absorbs in seconds. Start with 2–3 drops on damp skin; a little goes a long way.</p>"
+          }
+        },
+        "q2": {
+          "type": "question",
+          "settings": {
+            "question": "Can I use it on oily or acne-prone skin?",
+            "answer": "<p>Many people with oily skin enjoy lightweight oils like jojoba and squalane. As with any new product, patch test first.</p>"
+          }
+        },
+        "q3": {
+          "type": "question",
+          "settings": {
+            "question": "Where does it fit in my routine?",
+            "answer": "<p>Use it as your last skincare step at night, and before SPF in the morning. You can also mix a drop into your moisturiser.</p>"
+          }
+        },
+        "q4": {
+          "type": "question",
+          "settings": {
+            "question": "How long does one bottle last?",
+            "answer": "<p>With daily use, one bottle lasts around 8 weeks.</p>"
+          }
+        },
+        "q5": {
+          "type": "question",
+          "settings": {
+            "question": "What if it isn't right for me?",
+            "answer": "<p>You're covered by our 30-day guarantee. Get in touch and we'll make it right.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5"
+      ],
+      "settings": {
+        "eyebrow": "FAQ",
+        "heading": "Questions, answered",
+        "background": "plain"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "marquee",
+    "highlights",
+    "story",
+    "stats",
+    "ingredients",
+    "steps",
+    "compare",
+    "reviews",
+    "guarantee",
+    "faq"
+  ]
+}

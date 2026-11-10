@@ -1,0 +1,12 @@
+<section class="section">
+  <div class="container container--narrow text-center">
+    <p class="eyebrow">404</p>
+    <h1>{{ 'general.page_not_found' | t }}</h1>
+    <p>{{ 'general.page_not_found_text' | t }}</p>
+    <a class="button button--primary" href="{{ routes.root_url }}">{{ 'general.continue_shopping' | t }}</a>
+  </div>
+</section>
+
+{% schema %}
+{ "name": "404" }
+{% endschema %}

@@ -1,0 +1,15 @@
+<section class="section">
+  <article class="container container--narrow">
+    <p class="eyebrow">{{ article.published_at | date: '%B %d, %Y' }}</p>
+    <h1>{{ article.title }}</h1>
+    {%- if article.image -%}
+      <div class="article__image">{{ article.image | image_url: width: 1400 | image_tag: loading: 'eager', alt: article.title }}</div>
+    {%- endif -%}
+    <div class="rte">{{ article.content }}</div>
+    <p><a class="link" href="{{ blog.url }}">&larr; {{ 'blog.back' | t }}</a></p>
+  </article>
+</section>
+
+{% schema %}
+{ "name": "Article" }
+{% endschema %}

@@ -1,0 +1,44 @@
+{
+  "general": {
+    "skip_to_content": "Skip to content",
+    "menu": "Menu",
+    "cart": "Cart",
+    "search": "Search",
+    "continue_shopping": "Continue shopping",
+    "page_not_found": "Page not found",
+    "page_not_found_text": "The page you were looking for does not exist."
+  },
+  "products": {
+    "add_to_cart": "Add to cart",
+    "sold_out": "Sold out",
+    "unavailable": "Unavailable",
+    "save": "Save",
+    "from": "From",
+    "view": "View product"
+  },
+  "cart": {
+    "title": "Your cart",
+    "empty": "Your cart is empty.",
+    "update": "Update cart",
+    "checkout": "Checkout",
+    "subtotal": "Subtotal",
+    "remove": "Remove",
+    "quantity": "Quantity",
+    "taxes_note": "Taxes and shipping calculated at checkout."
+  },
+  "search": {
+    "title": "Search",
+    "placeholder": "Search our store",
+    "no_results": "No results found.",
+    "results_for": "Results for"
+  },
+  "newsletter": {
+    "email": "Email address",
+    "subscribe": "Subscribe",
+    "success": "Thanks for subscribing!"
+  },
+  "blog": {
+    "read_more": "Read more",
+    "back": "Back to blog"
+  }
+}

@@ -1,0 +1,24 @@
+<section class="section section--{{ section.settings.background }}">
+  <div class="container container--narrow guarantee">
+    <span class="guarantee__seal">{% render 'icon', name: 'shield' %}</span>
+    <h2>{{ section.settings.heading }}</h2>
+    <div class="rte">{{ section.settings.text }}</div>
+    {%- if section.settings.button_label != blank -%}
+      <a class="button button--accent button--large" href="{{ section.settings.button_link | default: '#MainContent' }}">{{ section.settings.button_label }}</a>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Guarantee banner",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Love your glow, or your money back" },
+    { "type": "richtext", "id": "text", "label": "Text", "default": "<p>Use it for 30 days. If it isn't right for your skin, tell us and we'll refund your order.</p>" },
+    { "type": "text", "id": "button_label", "label": "Button label", "default": "Try it risk-free" },
+    { "type": "url", "id": "button_link", "label": "Button link" },
+    { "type": "select", "id": "background", "label": "Background", "default": "dark", "options": [ { "value": "plain", "label": "Plain" }, { "value": "surface", "label": "Alternate" }, { "value": "dark", "label": "Dark" } ] }
+  ],
+  "presets": [ { "name": "Guarantee banner" } ]
+}
+{% endschema %}

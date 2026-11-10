@@ -1,0 +1,53 @@
+<section class="section section--{{ section.settings.background }}">
+  <div class="container container--narrow">
+    <div class="section__head">
+      {%- if section.settings.eyebrow != blank -%}<p class="eyebrow">{{ section.settings.eyebrow }}</p>{%- endif -%}
+      <h2>{{ section.settings.heading }}</h2>
+    </div>
+    <div class="compare" role="table">
+      <div class="compare__row compare__row--head" role="row">
+        <span role="columnheader"></span>
+        <span class="compare__us" role="columnheader">{{ section.settings.us_label | default: shop.name }}</span>
+        <span class="compare__them" role="columnheader">{{ section.settings.them_label }}</span>
+      </div>
+      {%- for block in section.blocks -%}
+        <div class="compare__row" role="row" {{ block.shopify_attributes }}>
+          <span class="compare__feature" role="rowheader">{{ block.settings.feature }}</span>
+          <span class="compare__us" role="cell">
+            {%- if block.settings.us -%}<span class="compare__yes">{% render 'icon', name: 'check' %}</span><span class="visually-hidden">Yes</span>
+            {%- else -%}<span class="compare__no">{% render 'icon', name: 'x' %}</span><span class="visually-hidden">No</span>{%- endif -%}
+          </span>
+          <span class="compare__them" role="cell">
+            {%- if block.settings.them -%}<span class="compare__yes compare__yes--muted">{% render 'icon', name: 'check' %}</span><span class="visually-hidden">Yes</span>
+            {%- else -%}<span class="compare__no">{% render 'icon', name: 'x' %}</span><span class="visually-hidden">No</span>{%- endif -%}
+          </span>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Comparison table",
+  "max_blocks": 8,
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Small heading", "default": "Why switch" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Not all face oils are equal" },
+    { "type": "text", "id": "us_label", "label": "Your column label", "info": "Defaults to your shop name." },
+    { "type": "text", "id": "them_label", "label": "Other column label", "default": "Typical oils" },
+    { "type": "select", "id": "background", "label": "Background", "default": "plain", "options": [ { "value": "plain", "label": "Plain" }, { "value": "surface", "label": "Alternate" }, { "value": "dark", "label": "Dark" } ] }
+  ],
+  "blocks": [
+    {
+      "type": "row", "name": "Row",
+      "settings": [
+        { "type": "text", "id": "feature", "label": "Feature", "default": "Cold-pressed botanical oils" },
+        { "type": "checkbox", "id": "us", "label": "You", "default": true },
+        { "type": "checkbox", "id": "them", "label": "Others", "default": false }
+      ]
+    }
+  ],
+  "presets": [ { "name": "Comparison table", "blocks": [ { "type": "row" }, { "type": "row" }, { "type": "row" } ] } ]
+}
+{% endschema %}

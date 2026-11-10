@@ -1,0 +1,53 @@
+<section class="section section--{{ section.settings.background }}">
+  <div class="container">
+    <div class="section__head">
+      {%- if section.settings.eyebrow != blank -%}<p class="eyebrow">{{ section.settings.eyebrow }}</p>{%- endif -%}
+      <h2>{{ section.settings.heading }}</h2>
+      {%- if section.settings.text != blank -%}<p class="section__sub">{{ section.settings.text }}</p>{%- endif -%}
+    </div>
+    <div class="cards cards--{{ section.blocks.size | at_most: 4 }}">
+      {%- for block in section.blocks -%}
+        <article class="card" {{ block.shopify_attributes }}>
+          <div class="card__media">
+            {%- if block.settings.image != blank -%}
+              {{ block.settings.image | image_url: width: 700 | image_tag: loading: 'lazy', sizes: '(min-width: 750px) 25vw, 80vw', widths: '300,500,700' }}
+            {%- else -%}
+              <span class="card__icon">{% render 'icon', name: block.settings.icon %}</span>
+            {%- endif -%}
+          </div>
+          <div class="card__body">
+            {%- if block.settings.tag != blank -%}<p class="card__tag">{{ block.settings.tag }}</p>{%- endif -%}
+            <h3>{{ block.settings.title }}</h3>
+            <p>{{ block.settings.text }}</p>
+          </div>
+        </article>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Ingredient cards",
+  "max_blocks": 8,
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Small heading", "default": "What's inside" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Four oils. Nothing to hide." },
+    { "type": "text", "id": "text", "label": "Text" },
+    { "type": "select", "id": "background", "label": "Background", "default": "surface", "options": [ { "value": "plain", "label": "Plain" }, { "value": "surface", "label": "Alternate" }, { "value": "dark", "label": "Dark" } ] }
+  ],
+  "blocks": [
+    {
+      "type": "ingredient", "name": "Ingredient",
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "Image" },
+        { "type": "text", "id": "icon", "label": "Icon (when no image)", "default": "leaf", "info": "leaf, drop, sparkle, shield, truck, heart, sun, moon, flask, bunny, recycle, lock, return, clock, gift, check" },
+        { "type": "text", "id": "tag", "label": "Tag", "default": "Nourish" },
+        { "type": "text", "id": "title", "label": "Name", "default": "Rosehip oil" },
+        { "type": "textarea", "id": "text", "label": "Description", "default": "Describe what this ingredient brings to the blend." }
+      ]
+    }
+  ],
+  "presets": [ { "name": "Ingredient cards", "blocks": [ { "type": "ingredient" }, { "type": "ingredient" }, { "type": "ingredient" }, { "type": "ingredient" } ] } ]
+}
+{% endschema %}

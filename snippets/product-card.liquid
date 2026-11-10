@@ -1,0 +1,21 @@
+{%- comment -%} Usage: {% render 'product-card', product: product %} {%- endcomment -%}
+<a class="product-card" href="{{ product.url }}">
+  <div class="product-card__media">
+    {%- if product.featured_image -%}
+      {{ product.featured_image | image_url: width: 700 | image_tag: loading: 'lazy', alt: product.title }}
+    {%- else -%}
+      {% render 'bottle-placeholder', uid: product.id %}
+    {%- endif -%}
+    {%- if product.compare_at_price > product.price -%}
+      <span class="badge badge--corner">{{ 'products.save' | t }} {{ product.compare_at_price | minus: product.price | times: 100 | divided_by: product.compare_at_price }}%</span>
+    {%- endif -%}
+  </div>
+  <h3 class="product-card__title">{{ product.title }}</h3>
+  <p class="product-card__price">
+    {%- if product.price_varies -%}{{ 'products.from' | t }} {% endif -%}
+    <span>{{ product.price | money }}</span>
+    {%- if product.compare_at_price > product.price -%}
+      <s>{{ product.compare_at_price | money }}</s>
+    {%- endif -%}
+  </p>
+</a>

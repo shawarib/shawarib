@@ -1,0 +1,46 @@
+<header class="site-header" data-header>
+  <div class="container site-header__inner">
+    <details class="site-header__drawer">
+      <summary aria-label="{{ 'general.menu' | t }}">{% render 'icon', name: 'menu' %}</summary>
+      <nav class="site-header__mobile-nav" aria-label="{{ 'general.menu' | t }}">
+        {%- for link in section.settings.menu.links -%}
+          <a href="{{ link.url }}"{% if link.active %} aria-current="page"{% endif %}>{{ link.title }}</a>
+        {%- endfor -%}
+      </nav>
+    </details>
+
+    <a class="site-header__logo" href="{{ routes.root_url }}">
+      {%- if settings.logo != blank -%}
+        {{ settings.logo | image_url: width: 480 | image_tag: alt: shop.name, style: 'width: var(--logo-width)' }}
+      {%- else -%}
+        <span class="site-header__wordmark">{{ shop.name }}</span>
+      {%- endif -%}
+    </a>
+
+    <nav class="site-header__nav" aria-label="{{ 'general.menu' | t }}">
+      {%- for link in section.settings.menu.links -%}
+        <a href="{{ link.url }}"{% if link.active %} aria-current="page"{% endif %}>{{ link.title }}</a>
+      {%- endfor -%}
+    </nav>
+
+    <div class="site-header__icons">
+      <a href="{{ routes.search_url }}" aria-label="{{ 'general.search' | t }}">{% render 'icon', name: 'search' %}</a>
+      <a class="site-header__cart" href="{{ routes.cart_url }}" aria-label="{{ 'general.cart' | t }}">
+        {% render 'icon', name: 'cart' %}
+        <span class="site-header__count" data-cart-count{% if cart.item_count == 0 %} hidden{% endif %}>{{ cart.item_count }}</span>
+      </a>
+    </div>
+  </div>
+</header>
+<style>
+  .site-header { --logo-width: {{ settings.logo_width }}px; }
+</style>
+
+{% schema %}
+{
+  "name": "Header",
+  "settings": [
+    { "type": "link_list", "id": "menu", "label": "Menu", "default": "main-menu" }
+  ]
+}
+{% endschema %}

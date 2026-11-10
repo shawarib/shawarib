@@ -1,0 +1,58 @@
+<section class="section section--{{ section.settings.background }}">
+  <div class="container">
+    <div class="section__head">
+      {%- if section.settings.eyebrow != blank -%}<p class="eyebrow">{{ section.settings.eyebrow }}</p>{%- endif -%}
+      <h2>{{ section.settings.heading }}</h2>
+      {%- if section.settings.text != blank -%}<p class="section__sub">{{ section.settings.text }}</p>{%- endif -%}
+    </div>
+    <div class="stats">
+      {%- for block in section.blocks -%}
+        <div class="stat" {{ block.shopify_attributes }}>
+          <div class="stat__ring" style="--fill: {{ block.settings.fill }}">
+            <svg viewBox="0 0 120 120" aria-hidden="true">
+              <circle class="stat__ring-bg" cx="60" cy="60" r="52" pathLength="100"/>
+              <circle class="stat__ring-fg" cx="60" cy="60" r="52" pathLength="100"/>
+            </svg>
+            <span class="stat__value">{{ block.settings.value }}</span>
+          </div>
+          <p class="stat__label">{{ block.settings.label }}</p>
+        </div>
+      {%- endfor -%}
+    </div>
+    {%- if section.settings.footnote != blank -%}<p class="section__footnote">{{ section.settings.footnote }}</p>{%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Stats rings",
+  "max_blocks": 4,
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Small heading", "default": "By the numbers" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Simple on purpose" },
+    { "type": "text", "id": "text", "label": "Text" },
+    { "type": "text", "id": "footnote", "label": "Footnote", "info": "If you quote study or survey results, cite the source here." },
+    { "type": "select", "id": "background", "label": "Background", "default": "dark", "options": [ { "value": "plain", "label": "Plain" }, { "value": "surface", "label": "Alternate" }, { "value": "dark", "label": "Dark" } ] }
+  ],
+  "blocks": [
+    {
+      "type": "stat", "name": "Stat",
+      "settings": [
+        { "type": "text", "id": "value", "label": "Value", "default": "100%" },
+        { "type": "range", "id": "fill", "min": 0, "max": 100, "step": 5, "unit": "%", "label": "Ring fill", "default": 100 },
+        { "type": "text", "id": "label", "label": "Label", "default": "Plant-derived oils" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Stats rings",
+      "blocks": [
+        { "type": "stat", "settings": { "value": "100%", "fill": 100, "label": "Plant-derived oils" } },
+        { "type": "stat", "settings": { "value": "0%", "fill": 0, "label": "Synthetic fragrance, silicones or mineral oil" } },
+        { "type": "stat", "settings": { "value": "3", "fill": 50, "label": "Drops is all you need per use" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

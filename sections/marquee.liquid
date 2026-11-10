@@ -1,0 +1,35 @@
+<div class="marquee marquee--{{ section.settings.style }}" aria-hidden="true">
+  <div class="marquee__track" style="--marquee-speed: {{ section.settings.speed }}s">
+    {%- for i in (1..4) -%}
+      <div class="marquee__group">
+        {%- for block in section.blocks -%}
+          <span class="marquee__item" {% if i == 1 %}{{ block.shopify_attributes }}{% endif %}>{% render 'icon', name: 'sparkle' %}{{ block.settings.text }}</span>
+        {%- endfor -%}
+      </div>
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Scrolling text",
+  "settings": [
+    { "type": "select", "id": "style", "label": "Style", "default": "dark", "options": [ { "value": "dark", "label": "Dark" }, { "value": "accent", "label": "Accent" }, { "value": "light", "label": "Light" } ] },
+    { "type": "range", "id": "speed", "min": 10, "max": 60, "step": 2, "unit": "s", "label": "Loop duration", "default": 28 }
+  ],
+  "blocks": [
+    { "type": "text", "name": "Text", "settings": [ { "type": "text", "id": "text", "label": "Text", "default": "Cold-pressed" } ] }
+  ],
+  "presets": [
+    {
+      "name": "Scrolling text",
+      "blocks": [
+        { "type": "text", "settings": { "text": "Cold-pressed" } },
+        { "type": "text", "settings": { "text": "Vegan" } },
+        { "type": "text", "settings": { "text": "Cruelty-free" } },
+        { "type": "text", "settings": { "text": "No synthetic fragrance" } }
+      ]
+    }
+  ]
+}
+{% endschema %}
