@@ -110,7 +110,6 @@ fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
 
 /* ---------- Product ---------- */
 .product { display: grid; grid-template-columns: minmax(0, 1fr); gap: 28px; }
-}
 .product__slides { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; border-radius: var(--radius); background: var(--color-surface); }
 .product__slides::-webkit-scrollbar { display: none; }
 .product__slide { flex: 0 0 100%; scroll-snap-align: center; aspect-ratio: 1 / 1; overflow: hidden; }
@@ -202,6 +201,7 @@ input:checked + .bundle .bundle__radio::after { content: ''; width: 10px; height
   .product__slide { border-radius: var(--radius); background: var(--color-surface); }
   .product__slide:first-child { grid-column: 1 / -1; }
   .product__thumbs { display: none; }
+}
 
 /* ---------- Marquee ---------- */
 .marquee { overflow: hidden; padding: 14px 0; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; font-size: .84rem; }
